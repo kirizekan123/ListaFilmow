@@ -11,6 +11,7 @@ def get_video_url():
             'quiet': True,
             'skip_download': True,
             'format': 'best[height<=720]/best',
+            'cookiefile': 'www.youtube.com_cookies.txt',
         }
 
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
